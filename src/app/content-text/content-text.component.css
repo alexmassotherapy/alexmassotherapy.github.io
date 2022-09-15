@@ -4,3 +4,32 @@
     font-family: 'Noto Serif', serif;
     
 }
+
+.content-container-mission{
+    background-color: white;
+    z-index: 2;
+    font-family: 'Noto Serif', serif;
+
+    
+}
+
+.has-border-bottom{
+    border-bottom: 2px solid rgb(59, 43, 26);
+}
+
+
+.mission-quote{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.about-list{
+    list-style-type: circle;
+}
+.about-list li{
+    font-weight: bold;
+}
+
+.my-heading{
+    align-self: flex-start;
+}
