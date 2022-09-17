@@ -33,3 +33,22 @@
 .my-heading{
     align-self: flex-start;
 }
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .map-photo{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+
+    .map-photo{
+        width: 90%;
+    }
+
+}
+
