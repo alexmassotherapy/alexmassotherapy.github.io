@@ -24,6 +24,14 @@
     color: rgb(248, 245, 239);
 }
 
+.navbar-burger{
+    color: rgb(248, 245, 239);
+}
+
+.navbar-item-font{
+    font-family: 'Noto Serif', serif;
+}
+
 .navbar-item:hover{
     background-color: transparent;
     color: rgb(248, 245, 239);
@@ -32,4 +40,12 @@
 
 #language_button:hover{
     text-decoration: underline;
+}
+
+.navbar-menu{
+
+    background-color: transparent;
+    z-index: 3;
+
+
 }
