@@ -1,5 +1,6 @@
 .bg-img { 
-    background-image: url(../assets/img/ale-romo-CLiwQXx7kT8-unsplash.jpg) ;
+    background-image: url(../assets/img/ale-romo-CLiwQXx7kT8-unsplash.jpg);
+    /* background-image: url(../assets/img/massage_pexels.jpeg); */
     background-position: center center;
     background-repeat:  no-repeat;
     /* background-attachment: fixed; */
@@ -26,7 +27,7 @@
     font-weight: 400;
     padding: 20px;
     background-color: rgb(248, 245, 239);
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 
-    width: 300px;
+    width: 320px;
 }
