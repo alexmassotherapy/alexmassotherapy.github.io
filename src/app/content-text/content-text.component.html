@@ -1,11 +1,12 @@
-<div class="content-container columns">
+<div class="content-container columns" *transloco="let t;">
 	<div class="column">
 		<!-- LEFT SIDE BORDER - add breakpoint to hide for mobile -->
 	</div>
 
 	<div class="column is-four-fifths">
-        <p class="is-size-1 ml-4">Are you stressed or in pain?</p>
-        <p class="is-size-4 ml-4">I can help ease pain, aches, and encourage relaxation from the comfort of your home</p>
+        
+        <p class="is-size-1 ml-4">{{ t('top-message-bold')}}</p>
+        <p class="is-size-4 ml-4">{{ t('top-message-light')}}</p>
 
 	</div>
 
@@ -15,7 +16,7 @@
 	</div>
 </div>
 
-<div class="content-container-mission columns">
+<div class="content-container-mission columns" *transloco="let t;">
 	<div class="column" style="background-color: rgb(254, 253, 253)">
 		<!-- LEFT SIDE BORDER - add breakpoint to hide for mobile -->
 	</div>
@@ -30,8 +31,12 @@
                 <img src="assets/img/alexmassage1-edit.jpg">
             </div>
             <div class="column is-two-thirds is-flex-direction-column is-flex is-justify-content-center">
-                <p class="is-size-5 ml-4 mission-text">As a massage therapist, I believe in the ability to heal certain ailments solely using the sense of touch. It has worked for me in the past and has been proven effective across many cultures. I promise to help give you the treatment you need and more.</p>
-                <p class="is-size-6 ml-4 mt-4 mission-quote">"...science is confirming what we know in our hearts: that, as psychiatrist James Gordon put it, 'massage is medicine.'" -George Howe Colt</p>
+                <p class="is-size-5 ml-4 mission-text">
+                    {{ t('mission-main-text')}}
+                </p>
+                <p class="is-size-6 ml-4 mt-4 mission-quote">
+                    {{ t('mission-quote')}}
+                </p>
             </div>
 
         </div>
@@ -40,13 +45,17 @@
         <div class="columns has-border-bottom" style="background-color: rgb(254, 253, 253)">
 
             <div class="column is-two-thirds is-flex-direction-column is-flex is-justify-content-center">
-                <h1 id='about-section' class="ml-4 mb-4 is-size-2 my-heading">About</h1>
-                <p class="is-size-5 ml-4 mission-text mb-3">Hello there!</p>
-                <p class="is-size-5 ml-4 mission-text">My name is Alex Perron and I am a dedicated massage therapist. I use my skills to treat any muscle pains and aches. I can offer a relaxation massage, a therapeutic massage or a mixture of both. I have thoroughly studied the body and am confident that my professional skills can help you in the short and long term.</p>
+                <h1 id='about-section' class="ml-4 mb-4 is-size-2 my-heading">
+                    {{ t('about')}}
+                </h1>
+                <!-- <p class="is-size-5 ml-4 mission-text mb-3">Hello there!</p> -->
+                <p class="is-size-5 ml-4 mission-text">
+                    {{ t('about-main')}}
+                </p>
                 <ul class="is-size-6 about-list ml-6 mt-4">
-                    <li>Insured and Qualified</li>
-                    <li>Flexible hours to accomodate my clients work schedule</li>
-                    <li>I provide in-home massages in the Greater Montreal Area allowing you to feel relaxed in the comfort of your home</li>
+                    <li>{{ t('about-list-1')}}</li>
+                    <li>{{ t('about-list-2')}}</li>
+                    <li>{{ t('about-list-3')}}</li>
                 </ul>
 
             </div>
@@ -60,8 +69,10 @@
         <!-- MAP SECTION -->
         <div class="columns has-border-bottom" style="background-color: rgb(254, 253, 253)">
             <div class="column has-text-centered">
-                <h1 id='map-section' class="ml-4 mb-4 is-size-2 my-heading">Locations</h1>
-                <p class="mt-4 has-text-weight-bold">In-Home Visits Available in the Greater Montreal Area</p>
+                <h1 id='map-section' class="ml-4 mb-4 is-size-2 my-heading" >{{ t('locations')}}</h1>
+                <p class="mt-4 has-text-weight-bold" >
+                    {{ t('locations-text')}}
+                </p>
                 
                 <img class="map-photo" src="assets/svg/greater-montreal-clean.svg">
             </div>
@@ -73,42 +84,35 @@
         <div class="columns" style="background-color: rgb(254, 253, 253)">
 
             <div class="column">
-                <h1 id='prices-section' class="ml-4 mb-4 is-size-2 my-heading">Prices</h1>
+                <h1 id='prices-section' class="ml-4 mb-4 is-size-2 my-heading" >
+                    {{ t('prices')}}
+                </h1>
                 
-                <ul class="is-size-6 about-list ml-6">
-                    <li>60 Minute Massage ($100)</li>
-                    <li>90 Minute Massage ($130)</li>
-                    <li>120 Minute Massage ($160)</li>
+                <ul class="is-size-6 about-list ml-6" >
+                    <li>{{ t('prices-list-1')}}</li>
+                    <li>{{ t('prices-list-2')}}</li>
+                    <li>{{ t('prices-list-3')}}</li>
 
                 </ul>
             </div>
 
             <div class="column is-flex-direction-column is-flex is-justify-content-center mb-5">
-                <h1 id="qualifications-section" class="ml-4 mb-4 is-size-2 my-heading">Qualifications</h1>
-                <p class="is-size-5 ml-4 mission-text mb-3">I'm certified in:</p>
-                
-                <ul class="is-size-6 about-list ml-6">
-                    <li>Swedish Massage</li>
-                    <li>Sports Massage</li>
-                    <li>Trigger Point Therapy</li>
-                    <li>Deep Tissue</li>
-                    <li>Myofascial Stretching</li>
-                    <li>Passive Mobilizations</li>
+                <h1 id="qualifications-section" class="ml-4 mb-4 is-size-2 my-heading" >
+                    {{ t('qualifications')}}
+                </h1>
+                <!-- <p class="is-size-5 ml-4 mission-text mb-3">I'm certified in:</p>
+                 -->
+                <ul class="is-size-6 about-list ml-6" >
+                    <li>{{ t('certified-list-1')}}</li>
+                    <li>{{ t('certified-list-2')}}</li>
+                    <li>{{ t('certified-list-3')}}</li>
+                    <li>{{ t('certified-list-4')}}</li>
+                    <li>{{ t('certified-list-5')}}</li>
+                    <li>{{ t('certified-list-6')}}</li>
                 </ul>
 
             </div>
         </div>
-
-        <!-- CONTACT SECTION -->
-        <!-- <div class="columns">
-            <div class="column has-text-centered mb-4">
-                <p class="mt-4 has-text-weight-bold">For any questions or to book an appointment you can contact me at:</p>
-                <p class="has-text-weight-bold is-size-5">xander.perron@gmail.com</p>
-                <p class="has-text-weight-bold is-size-5">(514) 638-4972</p>
-
-            </div>
-            
-        </div> -->
 
 
 	</div>
@@ -119,7 +123,7 @@
 	</div>
 </div>
 
-<div class="content-container columns">
+<div class="content-container columns" *transloco="let t;">
 	<div class="column">
 		<!-- LEFT SIDE BORDER - add breakpoint to hide for mobile -->
 	</div>
@@ -128,8 +132,10 @@
         <!-- CONTACT SECTION -->
         <div id='contact-section' class="columns">
             <div class="column has-text-centered mb-4">
-                <p class="mt-4 has-text-weight-bold">For any questions or to book an appointment you can contact me at:</p>
-                <p class="has-text-weight-bold is-size-5">alexmassotherapy@gmail.com</p>
+                <p class="mt-4 has-text-weight-bold" >
+                    {{ t('contact-line-1')}}
+                </p>
+                <a class="has-text-weight-bold is-size-5 has-color-dark" href="mailto:alexmassotherapy@gmail.com">alexmassotherapy@gmail.com</a>
                 <p class="has-text-weight-bold is-size-5">(514) 638-4972</p>
 
             </div>

@@ -1,7 +1,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
 	<div class="navbar-brand">
-		<a class="navbar-item title-text" href="/">
-			alexmassotherapy
+		<a class="navbar-item title-text" href="/" *transloco="let t;">
+			{{ t('title')}}
 		</a>
 
 		<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" (click)="toggleMenuStyle()">
@@ -13,21 +13,23 @@
 
 	<div id="navbarBasicExample" class="navbar-menu">
 		<div class="navbar-start">
-			<a href='#about-section' class="navbar-item navbar-item-font">
-				About
+			<a href='#about-section' class="navbar-item navbar-item-font" *transloco="let t;">
+				{{ t('about')}}
 			</a>
 
-			<a href='#qualifications-section' class="navbar-item navbar-item-font">
-				Qualifications
+			<a href='#qualifications-section' class="navbar-item navbar-item-font" *transloco="let t;">
+				{{ t('qualifications')}}
 			</a>
 
-			<a href='#prices-section' class="navbar-item navbar-item-font">
-				Prices
+			<a href='#prices-section' class="navbar-item navbar-item-font" *transloco="let t;">
+				{{ t('prices')}}
 			</a>
 
-			<a href='#contact-section' class="navbar-item navbar-item-font">
-				Contact
+			<a href='#contact-section' class="navbar-item navbar-item-font" *transloco="let t;">
+				{{ t('contact')}}
 			</a>
+
+			
 
 
 		</div>
@@ -39,14 +41,19 @@
 				</span> -->
 
 				<div class="buttons">
-					<a class="button is-rounded navbar-item-font" href="mailto:alexmassotherapy@gmail.com">
+					<a class="button is-rounded navbar-item-font" href="https://appt.link/meet-with-alex-perron/example-meeting" target="_blank">
 						<span class="icon">
 							<i class="fa fa-envelope"></i>
 						</span>
-						<span>Book an Appointment</span>
+						<span *transloco="let t;">
+							{{ t('book-an-appointment')}}
+						</span>
 					</a>
 				</div>
 			</div>
+			<a (click)="changeLanguage($event)" class="navbar-item navbar-item-font" *transloco="let t;">
+				{{ t('language')}}
+			</a>
 		</div>
 	</div>
 </nav>

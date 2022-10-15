@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
 	selector: 'app-navbar',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-	constructor() { }
+	constructor(public TRANS_SERVICE: TranslocoService) { }
 
 	is_mobile_menu_active = false;
+
+	current_languge = 'en';
 
 
 	ngOnInit(): void {
@@ -94,6 +97,13 @@ export class NavbarComponent implements OnInit {
 		}
 
 
+	}
+
+	changeLanguage(e: Event){
+
+		let link = e.target as HTMLLinkElement;
+		this.TRANS_SERVICE.setActiveLang(link.innerText);
+		
 	}
 
 
