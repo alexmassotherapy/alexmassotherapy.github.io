@@ -1,3 +1,11 @@
+THIS DIRECTORY IS OWNED BY CUSTOM ACCOUNT "alexmassotherapy" on github !A
+also reference email: info@alexmassotherapy.com (zoho mail); !A
+
+Deloyment is via the master/docs branch - update that one to update live site
+
+squarespace is hosting the alexmassotherapy domain
+
+
 REFERENCE
 https://clarkson-fluid-demo.squarespace.com/?nochrome=true
 
@@ -11,4 +19,5 @@ PHOTO CALLOUT
 Photo by <a href="https://unsplash.com/@aleromophotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ale Romo</a> on <a href="https://unsplash.com/s/photos/massage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Photo by <a href="https://unsplash.com/@christinhumephoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christin Hume</a> on <a href="https://unsplash.com/s/photos/massage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+
+
